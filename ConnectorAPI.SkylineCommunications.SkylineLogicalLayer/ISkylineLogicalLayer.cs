@@ -30,7 +30,7 @@
         /// Sends the specified messages to the element using InterApp and do not wait for a response.
         /// </summary>
         /// <param name="messages">The messages that need to be send.</param>
-        void SendMessageNoResponse(params IExampleRequest[] messages);
+        void SendMessageNoResponse(params ISkylineLogicalLayerRequest[] messages);
 
         /// <summary>
         /// Sends the specified messages to the element using InterApp and wait for the responses.
@@ -38,7 +38,7 @@
         /// <param name="messages">The messages that need to be send.</param>
         /// <param name="timeout">The time the method needs to wait for a response.</param>
         /// <returns>The response coming from the element</returns>
-        IEnumerable<IExampleResponse> SendMessages(IExampleRequest[] messages, TimeSpan timeout = default);
+        IEnumerable<ISkylineLogicalLayerResponse> SendMessages(ISkylineLogicalLayerRequest[] messages, TimeSpan timeout = default);
 
         /// <summary>
         /// Sends the specified message to the element using InterApp and wait for the responses.
@@ -46,7 +46,7 @@
         /// <param name="message">The message that needs to be send.</param>
         /// <param name="timeout">The time the method needs to wait for a response.</param>
         /// <returns>The response coming from the element</returns>
-        IExampleResponse SendSingleResponseMessage(IExampleRequest message, TimeSpan timeout = default);
+        ISkylineLogicalLayerResponse SendSingleResponseMessage(ISkylineLogicalLayerRequest message, TimeSpan timeout = default);
 
         /// <summary>
         /// Sends the specified message to the element using InterApp and wait for the responses.
@@ -54,7 +54,7 @@
         /// <param name="message">The message that needs to be send.</param>
         /// <param name="timeout">The time the method needs to wait for a response.</param>
         /// <returns>The response coming from the device</returns>
-        /// <typeparam name="T">The type of the expected response, which must implement <see cref="IExampleResponse"/>.</typeparam>
-        T SendSingleResponseMessage<T>(IExampleRequest message, TimeSpan timeout = default) where T : IExampleResponse;
+        /// <typeparam name="T">The type of the expected response, which must implement <see cref="ISkylineLogicalLayerResponse"/>.</typeparam>
+        T SendSingleResponseMessage<T>(ISkylineLogicalLayerRequest message, TimeSpan timeout = default) where T : ISkylineLogicalLayerResponse;
     }
 }
