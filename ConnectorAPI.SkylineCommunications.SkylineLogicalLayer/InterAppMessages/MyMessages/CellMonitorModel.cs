@@ -3,20 +3,20 @@
     using System;
 
     /// <summary>
-    /// InterApp message that will execute the parameter monitor model.
+    /// InterApp message that will execute the cell monitor model.
     /// </summary>
     [Serializable]
-    public class ParameterMonitorModel
+    public class CellMonitorModel
     {
         /// <summary>
         /// The message command.
         /// </summary>
-        public readonly string Command = "ParameterMonitorModel";
+        public readonly string Command = "CellMonitorModel";
 
         /// <summary>
-        /// The parameter monitor name.
+        /// The cell monitor name.
         /// </summary>
-        public string ParameterMonitorName { get; set; }
+        public string CellMonitorName { get; set; }
 
         /// <summary>
         /// The element name.
@@ -34,18 +34,28 @@
         public int ElementElementId { get; set; }
 
         /// <summary>
-        /// The parameter description.
+        /// The table ID.
         /// </summary>
-        public string ParameterDescription { get; set; }
+        public int TableId { get; set; }
 
         /// <summary>
-        /// The parameter ID.
+        /// The column description
         /// </summary>
-        public int ParameterId { get; set; }
+        public string ColumnDescription { get; set; }
 
         /// <summary>
-        /// Does the parameter has discreet values.
+        /// The column ID.
         /// </summary>
-        public bool ParameterIsDiscreet { get; set; }
+        public int ColumnId { get; set; }
+
+        /// <summary>
+        /// The column has discreet values.
+        /// </summary>
+        public bool ColumnIsDiscreet { get; set; }
+
+        /// <summary>
+        /// The index.
+        /// </summary>
+        public string Index { get; set; }
     }
 }

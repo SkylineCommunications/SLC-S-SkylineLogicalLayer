@@ -3,20 +3,41 @@
     using System;
 
     /// <summary>
-    /// InterApp message that will execute the parameter monitor model.
+    /// The element parameter options.
+    /// </summary>
+    public enum ElementParameter
+    {
+        /// <summary>
+        /// No element parameter selected, just normal parameter is selected.
+        /// </summary>
+        None = 0,
+
+        /// <summary>
+        /// The alarm state.
+        /// </summary>
+        ElementAlarmState = -1,
+
+        /// <summary>
+        /// The timeout state.
+        /// </summary>
+        ElementTimeout = -2,
+    }
+
+    /// <summary>
+    /// InterApp message that will execute the element alarm monitor model.
     /// </summary>
     [Serializable]
-    public class ParameterMonitorModel
+    internal class ElementAlarmMonitorModel
     {
         /// <summary>
         /// The message command.
         /// </summary>
-        public readonly string Command = "ParameterMonitorModel";
+        public readonly string Command = "ElementAlarmMonitorModel";
 
         /// <summary>
-        /// The parameter monitor name.
+        /// The element alarm monitor name.
         /// </summary>
-        public string ParameterMonitorName { get; set; }
+        public string ElementAlarmMonitorName { get; set; }
 
         /// <summary>
         /// The element name.
@@ -44,8 +65,8 @@
         public int ParameterId { get; set; }
 
         /// <summary>
-        /// Does the parameter has discreet values.
+        /// The kind of parameter that is selected.
         /// </summary>
-        public bool ParameterIsDiscreet { get; set; }
+        public ElementParameter ElementParameter { get; set; }
     }
 }
