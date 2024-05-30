@@ -46,6 +46,6 @@
         /// <summary>
         /// Does the parameter has discreet values.
         /// </summary>
-        public bool IsDiscreet { get; set; }
+        public bool ParameterIsDiscreet { get; set; }
     }
 }
