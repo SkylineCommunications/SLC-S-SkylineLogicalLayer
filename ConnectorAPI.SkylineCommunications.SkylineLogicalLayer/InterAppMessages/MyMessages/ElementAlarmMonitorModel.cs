@@ -27,7 +27,7 @@
     /// InterApp message that will execute the element alarm monitor model.
     /// </summary>
     [Serializable]
-    internal class ElementAlarmMonitorModel
+    public class ElementAlarmMonitorModel
     {
         /// <summary>
         /// The message command.
