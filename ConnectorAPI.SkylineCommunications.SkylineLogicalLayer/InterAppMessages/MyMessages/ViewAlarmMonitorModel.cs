@@ -3,6 +3,27 @@
     using System;
 
     /// <summary>
+    /// The view parameter options.
+    /// </summary>
+    public enum ViewParameter
+    {
+        /// <summary>
+        /// No view parameter selected.
+        /// </summary>
+        None = 0,
+
+        /// <summary>
+        /// The alarm state.
+        /// </summary>
+        ViewAlarmState = -1,
+
+        /// <summary>
+        /// The timeout state.
+        /// </summary>
+        ViewTimeout = -2,
+    }
+
+    /// <summary>
     /// InterApp message that will execute the view alarm monitor model.
     /// </summary>
     [Serializable]
