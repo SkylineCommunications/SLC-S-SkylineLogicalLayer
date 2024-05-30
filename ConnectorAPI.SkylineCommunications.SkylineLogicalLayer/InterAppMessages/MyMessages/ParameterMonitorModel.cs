@@ -42,5 +42,10 @@
         /// The parameter ID.
         /// </summary>
         public int ParameterId { get; set; }
+
+        /// <summary>
+        /// Does the parameter has discreet values.
+        /// </summary>
+        public bool IsDiscreet { get; set; }
     }
 }
