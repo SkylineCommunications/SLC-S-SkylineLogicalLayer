@@ -1,8 +1,8 @@
-﻿namespace Skyline.DataMiner.ConnectorAPI.SkylineCommunications.SkylineLogicalLayer.InterAppMessages
+﻿namespace Skyline.DataMiner.ConnectorAPI.SkylineCommunications.SkylineLogicalLayer.Messages
 {
     using System;
     using System.Collections.Generic;
-
+    using Skyline.DataMiner.ConnectorAPI.SkylineCommunications.SkylineLogicalLayer.InterAppMessages;
     using Skyline.DataMiner.ConnectorAPI.SkylineCommunications.SkylineLogicalLayer.InterAppMessages.MyMessages;
     using Skyline.DataMiner.Core.InterAppCalls.Common.CallSingle;
 
