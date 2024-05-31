@@ -57,5 +57,10 @@
         /// The index.
         /// </summary>
         public string Index { get; set; }
+
+        /// <summary>
+        /// This is the display key of the table.
+        /// </summary>
+        public string DisplayKey { get; set; }
     }
 }

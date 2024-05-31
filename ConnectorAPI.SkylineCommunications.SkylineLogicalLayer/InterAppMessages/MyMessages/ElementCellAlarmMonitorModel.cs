@@ -52,5 +52,10 @@
         /// The index.
         /// </summary>
         public string Index { get; set; }
+
+        /// <summary>
+        /// The display key.
+        /// </summary>
+        public string DisplayKey { get; set; }
     }
 }
