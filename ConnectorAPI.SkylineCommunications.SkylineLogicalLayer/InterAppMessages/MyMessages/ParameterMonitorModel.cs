@@ -47,5 +47,10 @@
         /// Does the parameter has discreet values.
         /// </summary>
         public bool ParameterIsDiscreet { get; set; }
+
+        /// <summary>
+        /// Is an update model.
+        /// </summary>
+        public bool IsUpdateMessage { get; set; }
     }
 }

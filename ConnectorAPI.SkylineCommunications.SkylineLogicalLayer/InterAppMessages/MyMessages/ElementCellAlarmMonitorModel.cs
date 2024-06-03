@@ -57,5 +57,10 @@
         /// The display key.
         /// </summary>
         public string DisplayKey { get; set; }
+
+        /// <summary>
+        /// Is an update model.
+        /// </summary>
+        public bool IsUpdateMessage { get; set; }
     }
 }

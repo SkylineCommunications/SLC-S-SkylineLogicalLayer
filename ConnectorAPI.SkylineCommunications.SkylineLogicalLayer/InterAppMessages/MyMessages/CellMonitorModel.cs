@@ -62,5 +62,10 @@
         /// This is the display key of the table.
         /// </summary>
         public string DisplayKey { get; set; }
+
+        /// <summary>
+        /// Is an update model.
+        /// </summary>
+        public bool IsUpdateMessage { get; set; }
     }
 }

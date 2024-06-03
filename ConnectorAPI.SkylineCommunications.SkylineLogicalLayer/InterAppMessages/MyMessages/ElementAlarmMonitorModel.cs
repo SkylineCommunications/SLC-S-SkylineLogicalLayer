@@ -68,5 +68,10 @@
         /// The kind of parameter that is selected.
         /// </summary>
         public ElementParameter ElementParameter { get; set; }
+
+        /// <summary>
+        /// Is an update model.
+        /// </summary>
+        public bool IsUpdateMessage { get; set; }
     }
 }
