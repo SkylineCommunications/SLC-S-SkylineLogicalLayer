@@ -53,5 +53,10 @@
         /// The parameter.
         /// </summary>
         public string Parameter { get; set; }
+
+        /// <summary>
+        /// Is the message an update.
+        /// </summary>
+        public bool IsUpdateMessage { get; set; }
     }
 }
