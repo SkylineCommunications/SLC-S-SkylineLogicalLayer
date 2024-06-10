@@ -9,6 +9,11 @@
     public class StaticVariableModel
     {
         /// <summary>
+        /// The message command.
+        /// </summary>
+        public readonly string Command = "StaticVariableModel";
+
+        /// <summary>
         /// This is the name for the static variable.
         /// </summary>
         public string Name { get; set; }
